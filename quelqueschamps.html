@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quelques champs HTML5</title>
+</head>
+<body>
+    <p>
+        <label id="prenom">Prénom : </label><input type="text" name="prenom" placeholder="Votre prénom"/>
+    </p>
+    <p>
+        <label id="nom">Nom : </label><input type="text" name="nom" placeholder="Votre nom"/>
+    </p>
+    <p>
+        <label id="age">Age : </label><input type="number" name="age" size="3" min="16" max="99"/>
+    </p>
+    <p>
+        Genre : <input type="radio" name="genre"/><label> Homme</label>
+        <input type="radio" name="genre"/><label> Femme</label> 
+        <input type="radio" name="genre"/><label> Je ne suis pas sûr de la pertinence de cette information</label>
+    </p>
+    <p>
+        <label id="mail">Adresse E-mail : </label><input type="email" name="mail" placeholder="exemple@email.com"/>
+    </p>
+    <p>
+        <label id="codepostale">Code Postal : </label><input required pattern="[0-9]{5}" type="text" size="8" maxlength="5"/>
+    </p>
+    <p>
+        <label id="ville">Ville : </label> <input type="text" name="ville" placeholder="Paris"/>
+    </p>
+    <p>
+        <label id="metier">Metier exercé : </label> 
+        <select>
+            <option value="Charpentier">Charpentier</option>
+            <option value="Cuisinier">Cuisinier</option>
+            <option value="Boulanger">Boulanger</option>
+            <option value="Professeur">Professeur</option>
+            <option value="Libraire">Libraire</option>
+            <option value="Infirmier">Infirmier</option>
+            <option value="Medecin">Medecin</option>
+            <option value="Secrétaire">Secrétaire</option>
+            <option value="Artiste Auteur">Artiste Auteur</option>
+            <option value="Intermittent du spectacle">Intermittent du spectacle</option>
+            <option value="Médiateur culturel">Médiateur culturel</option>
+            <option value="Commerçant">Commerçant</option>
+            <option value="Interim">Interim</option>
+            <option value="Téléconseiller">Téléconseiller</option>
+            <option value="Profession libérale">Profession libérale</option>
+            <option value="Cheminot">Cheminot</option>
+            <option value="Agent d'entretien">Agent d'entretien</option>
+            <option value="Parasite en chef (Jeff Bezos)">Parasite en chef (Jeff Bezos)</option>
+            <option value="Devellopeur Web">Devellopeur Web</option>
+            <option value="Ingénieur quelconque">Ingénieur quelconque</option>
+        </select>
+        <label>Autre corps de metier : </label>
+        <input type="text" name="metier" placeholder="Quel est votre metier ?"/>
+    </p>
+    <p>
+        <label id="nationalite">Nationalité</label> 
+        <select>
+            <option value="France">France</option>
+            <option value="Belgique">Belgique</option>
+            <option value="Luxembourg">Luxembourg</option>
+            <option value="Pays-Bas">Pays-Bas</option>
+            <option value="Monaco">Monaco</option>
+            <option value="Andorres">Andorres</option>
+            <option value="Allemagne">Allemagne</option>
+            <option value="Suisse">Suisse</option>
+            <option value="Autriche">Autriche</option>
+            <option value="Hongrie">Hongrie</option>
+            <option value="Italie">Italie</option>
+            <option value="Espagne">Espagne</option>
+            <option value="Portugal">Portugal</option>
+            <option value="Liechtenstein">Liechtenstein</option>
+            <option value="Danemark">Danemark</option>
+            <option value="Pologne">Pologne</option>
+        </select>
+    </p>
+    <p>
+        <label id="naissance">Date de naissance : </label><input type="date" name="naissance"/>
+    </p>
+    <p>
+        <label id="paysnaissance">Pays de naissance : </label> 
+        <select>
+            <option value="France">France</option>
+            <option value="Belgique">Belgique</option>
+            <option value="Luxembourg">Luxembourg</option>
+            <option value="Pays-Bas">Pays-Bas</option>
+            <option value="Monaco">Monaco</option>
+            <option value="Andorres">Andorres</option>
+            <option value="Allemagne">Allemagne</option>
+            <option value="Suisse">Suisse</option>
+            <option value="Autriche">Autriche</option>
+            <option value="Hongrie">Hongrie</option>
+            <option value="Italie">Italie</option>
+            <option value="Espagne">Espagne</option>
+            <option value="Portugal">Portugal</option>
+            <option value="Liechtenstein">Liechtenstein</option>
+            <option value="Danemark">Danemark</option>
+            <option value="Pologne">Pologne</option>
+        </select>
+    </p>
+    <p>
+        <label id="secunum">Numéro de sécurité sociale : </label><input type="text" placeholder="0000000000000000" size="21" maxlength="12"/>
+    </p>
+    <p>
+        <label id="numpassport">Numéro du passport : </label><input type="text" placeholder="0000000000000000" size="21" maxlength="12"/>
+    </p>
+    <p>
+        <label id="datedelivrance">Date du délivrance du passport : </label><input type="date"/>
+    </p>
+    <p>
+        <label>Date de validité du passport : </label><input type="date"/>
+    </p>
+    <p>
+        <input type="reset"/><input type="submit"/>
+    </p>
+</body>
+</html>
